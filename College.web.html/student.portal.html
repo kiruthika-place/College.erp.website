@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Login Page</title>
+    <link rel="stylesheet" href="best.css">
+</head>
+<body style="background-color: rgb(226, 43, 156);">
+    <div class="login-container">
+        <h2>STUDENT PORTAL</h2>
+        <form id="loginForm" onsubmit="return validateForm()" action="/login" method="post">
+            <div class="input-group">
+                <label for="rollNumber">Roll Number</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+            </div>
+            <div class="input-group">
+                <label for="currentYear">Current Year</label>
+                <input type="text" id="currentYear" name="currentYear" required>
+            </div>
+            <div class="input-group">
+                <label for="registrationNumber">Registration Number</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit"> Login</button>
+        </form>
+    </div>
+
+    <script src="best.js"></script>
+    
+</body>
+</html>

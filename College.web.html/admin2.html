@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="admin2.css">
+</head>
+<body>
+    <div style="background-color: lightyellow;">
+    <img src="panimalar.liner.img" >
+    </div>
+    
+    <div class="navbar">
+        <button onclick="showSection('addStudent')">Add Student</button>
+        <button onclick="showSection('addStaff')">Add Staff</button>
+        <button onclick="showSection('viewStudentDetails')">View Student Details</button>
+        <button onclick="showSection('viewReports')">View Reports</button>
+        <button onclick="showSection('lessonPlan')">Lesson Plan</button>
+    </div>
+
+    <div id="addStudent" class="section">
+        <h2>Add Student Details</h2>
+        <form id="studentForm">
+            <label for="studentName">Name:</label>
+            <input type="text" id="studentName" name="name" required>
+            <label for="rollNumber">Register Number:</label>
+            <input type="text" id="rollNumber" name=
+            "rollNumber" required>
+            <label for="studentYear">Year:</label>
+            <select id ="student" name="student" style="width: 600px; height: 35px; border-color: antiquewhite; border-radius: 5px;">
+                <option value="1">1st year</option>
+                <option value="1">2nd year</option><option value="1">3rd Year</option>
+                <option value="1">4th Year</option>
+            </select>
+            <label for="studentEmail">Email ID:</label>
+            <input type="email" id="studentEmail" name="email" required>
+            <label for="feesPaid">Quota:</label>
+            <select id ="student" name="student" style="width: 600px; height: 35px; border-color: antiquewhite; border-radius: 5px;">
+                <option value="1">Goverment Quota</option>
+                <option value="1">Management Quota</option>
+                
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="addStaff" class="section">
+        <h2>Add Staff Details</h2>
+        <form id="staffForm">
+            <label for="facultyId">Faculty ID:</label>
+            <input type="text" id="facultyId" name="facultyId" required>
+            <label for="dept">Department:</label>
+            <input type="text" id="dept" name="dept" required>
+            <label for="staffYear">Year:</label>
+            <input type="text" id="staffYear" name="year" required>
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            <label for="staffEmail">Email ID:</label>
+            <input type="email" id="staffEmail" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="viewStudentDetails" class="section">
+        <h2>View Student Details</h2>
+        <form id="viewStudentForm">
+            <label for="viewDept">Department:</label>
+            <input type="text" id="viewDept" name="dept" required>
+            <label for="viewYear">Year:</label>
+            <input type="text" id="viewYear" name="year" required>
+            <input type="submit" value="View">
+        </form>
+    </div>
+
+    <div id="viewReports" class="section">
+        <h2>View Reports</h2>
+        <p>Student Report</p>
+        <!-- Add student report view here -->
+        <p>Faculty Research Report</p>
+        <!-- Add faculty research report view here -->
+    </div>
+
+    <div id="lessonPlan" class="section">
+        <h2>Upload Lesson Plan</h2>
+        <form id="lessonPlanForm">
+            <label for="lessonDept">Department:</label>
+            <input type="text" id="lessonDept" name="dept" required>
+            <label for="lessonYear">Year:</label>
+            <input type="text" id="lessonYear" name="year" required>
+            <label for="lessonFile">Upload Lesson Plan:</label>
+            <input type="file" id="lessonFile" name="lessonFile" required>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+    <script src="admin2.js"></script>
+</body>
+</html>
